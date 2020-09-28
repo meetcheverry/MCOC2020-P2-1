@@ -5,7 +5,7 @@ class Reticulado(object):
 
 	def __init__(self):
 		super(Reticulado, self).__init__()
-		
+
 		self.xyz = np.zeros((0,3), dtype=np.double)
 		self.Nnodos = 0
 		self.barras = []
@@ -18,27 +18,27 @@ class Reticulado(object):
 		self.xyz[self.Nnodos,:] = [x,y,z]
 		self.Nnodos +=1
 		return
-		
+
 	def agregar_barra(self, barra):
 		"""Implementar"""
 		return
 
-	def obtener_coordenada_nodal(self, n): 
+	def obtener_coordenada_nodal(self, n):
 		"""Implementar"""
-		return 
+		return
 
 	def calcular_peso_total(self):
 		"""Implementar"""
-		return 
+		return
 
 	def obtener_nodos(self):
 		"""Implementar"""
 
-		return 
+		return
 
 	def obtener_barras(self):
 		"""Implementar"""
-		return 
+		return
 
 	def agregar_restriccion(self, nodo, gdl, valor=0.0):
 		"""Implementar"""
@@ -54,6 +54,7 @@ class Reticulado(object):
 
 	def resolver_sistema(self):
 		"""Implementar"""
+		print ("hello")
 		return
 
 	def recuperar_fuerzas(self):
@@ -65,4 +66,3 @@ class Reticulado(object):
 		s += "mis nodos son:"
 		s += f"{self.xyz}"
 		return s
-
